@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_checkbox_dialog (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_checkbox_dialog (from `.symlinks/plugins/flutter_checkbox_dialog/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_checkbox_dialog:
+    :path: ".symlinks/plugins/flutter_checkbox_dialog/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  flutter_checkbox_dialog: 5e8bf921e8b6ef8b68aadc06cd72dcc27f5b8482
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.2
