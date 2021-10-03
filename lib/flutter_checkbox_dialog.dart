@@ -12,7 +12,7 @@ class FlutterCheckboxDialog {
     TextStyle? titleTextStyle,
     Widget? content,
     EdgeInsetsGeometry contentPadding =
-        const EdgeInsets.fromLTRB(24.0, 20.0, 24.0, 24.0),
+        const EdgeInsets.fromLTRB(24.0, 20.0, 24.0, 0),
     TextStyle? contentTextStyle,
     List<Widget>? actions,
     EdgeInsetsGeometry actionsPadding = EdgeInsets.zero,
@@ -144,11 +144,14 @@ class _AlertDialogState extends State<_AlertDialog> {
     if (widget.content == null) {
       _content = _checkboxListTile;
     } else {
-      _content = Row(
-        children: [
-          widget.content!,
-          _checkboxListTile,
-        ],
+      _content = SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            widget.content!,
+            _checkboxListTile,
+          ],
+        ),
       );
     }
 

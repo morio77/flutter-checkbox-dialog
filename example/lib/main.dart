@@ -45,6 +45,21 @@ class _MyHomePageState extends State<MyHomePage> {
               const Text('次回から確認しない'),
               _onChanged,
               title: const Text('確認ダイアログ'),
+              content: const Text('※この操作は取り消せません。'),
+              actions: [
+                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: const Text('OK'),
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: const Text('キャンセル'),
+                ),
+              ],
             );
           },
           child: const Text('ダイアログを開く'),
